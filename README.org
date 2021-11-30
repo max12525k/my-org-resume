@@ -1,3 +1,8 @@
+:PROPERTIES:
+:ID:       2fb4a981-450c-4a5f-bbd5-34d83553f1da
+:END:
+Special thanks to [[https://github.com/aidanscannell][aidanscannell]] for writing the beautiful blog to write resume in emacs. You can check [[https://gitlab.com/Titan-C/org-cv][org-cv]] also for writing beautiful resume in emacs.
+
 * Creating a CV/Resume in Org-Mode using LaTeX Templates :emacs:org_mode:cv:resume:doom_emacs:
 Over the last few years I have been trying to find the best tools for managing my CV/resume.
 Previously I was maintaining a JSON file that I could export to pdf/html using [[https://jsonresume.org/][JSON Resume]] and [[https://github.com/hacksalot/HackMyResume][HackMyResume]].
