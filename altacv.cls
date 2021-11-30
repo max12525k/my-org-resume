@@ -237,6 +237,10 @@
   \end{minipage}%
 }
 
+\newcommand{\cvdomain}[1]{
+  {\faIndustry~#1}
+}
+
 \newcommand{\altacv@add@photo@left}[1]{%
   \appto{\altacv@left@photos}{%
     \@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}%
@@ -306,6 +310,29 @@
   \ifstrequal{#3}{}{}{{\small\makebox[0.5\linewidth][l]{\faCalendar~#3}}}%
   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
   \medskip\normalsize
+}
+\newcommand{\cveventcomp}[5]{%
+    {\large\color{emphasis}#1\par}
+    \smallskip\normalsize
+    \ifstrequal{#2}{}{}{
+    \textbf{\color{accent}#2}\par
+    \smallskip}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.35\linewidth][l]{\faIndustry~#3}}}%
+  \ifstrequal{#4}{}{}{{\small\makebox[0.42\linewidth][l]{\faCalendar~#4}}}
+  \ifstrequal{#5}{}{}{{\small\makebox[0.35\linewidth][l]{\faMapMarker~#5}}}\par
+    \medskip\normalsize
+}
+
+\newcommand{\cveventacad}[5]{%
+    {\large\color{emphasis}#1\par}
+    \smallskip\normalsize
+    \ifstrequal{#2}{}{}{
+    \textbf{\color{accent}#2}\par
+    \smallskip}
+  \ifstrequal{#3}{}{}{{\small\makebox[0.35\linewidth][l]{\faChalkboardTeacher~#3}}}%
+  \ifstrequal{#4}{}{}{{\small\makebox[0.42\linewidth][l]{\faCalendar~#4}}}
+  \ifstrequal{#5}{}{}{{\small\makebox[0.35\linewidth][l]{\faMapMarker~#5}}}\par
+    \medskip\normalsize
 }
 
 \newcommand{\cvachievement}[3]{%
