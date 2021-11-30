@@ -1,0 +1,319 @@
+* Config/Preamble :noexport:ATTACH:
+:PROPERTIES:
+:ID:       8f68008d-a285-4bae-a653-5488ec7ebd44
+:END:
+ adapted from @aidanscannell/[[https://github.com/aidanscannell/my-org-resume.git][my-org-resume]]
+** LaTeX Config
+#+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
+(setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
+(add-to-list 'org-latex-classes
+             '("altacv" "\\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Use roboto and lato for fonts
+\\renewcommand{\\familydefault}{\\sfdefault}
+
+% Change the colours if you want to
+\\definecolor{SlateGrey}{HTML}{2E2E2E}
+\\definecolor{LightGrey}{HTML}{666666}
+\\definecolor{DarkPastelRed}{HTML}{450808}
+\\definecolor{PastelRed}{HTML}{8F0D0D}
+\\definecolor{GoldenEarth}{HTML}{E7D192}
+\\colorlet{name}{black}
+\\colorlet{tagline}{PastelRed}
+\\colorlet{heading}{DarkPastelRed}
+\\colorlet{headingrule}{GoldenEarth}
+\\colorlet{subheading}{PastelRed}
+\\colorlet{accent}{PastelRed}
+\\colorlet{emphasis}{SlateGrey}
+\\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\\renewcommand{\\namefont}{\\Huge\\rmfamily\\bfseries}
+\\renewcommand{\\personalinfofont}{\\footnotesize}
+\\renewcommand{\\cvsectionfont}{\\LARGE\\rmfamily\\bfseries}
+\\renewcommand{\\cvsubsectionfont}{\\large\\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\\renewcommand{\\itemmarker}{{\\small\\textbullet}}
+\\renewcommand{\\ratingmarker}{\\faCircle}
+"
+
+               ("\\cvsection{%s}" . "\\cvsection*{%s}")
+               ("\\cvevent{%s}" . "\\cvevent*{%s}")))
+(setq org-latex-packages-alist 'nil)
+(setq org-latex-default-packages-alist
+      '(("rm" "roboto"  t)
+        ("defaultsans" "lato" t)
+        ("" "paracol" t)
+        ))
+#+END_SRC
+#+LATEX_CLASS: altacv
+#+LATEX_HEADER: \columnratio{0.6} % Set the left/right column width ratio to 6:4.
+#+LATEX_HEADER: \usepackage[bottom]{footmisc}
+*** Bibliography
+# #+LATEX_HEADER: \DeclareNameAlias{sortname}{last-first}
+#+LATEX_HEADER: \DeclareNameAlias{sortname}{given-family}
+# #+LATEX_HEADER: \addbibresource{aidan.bib}
+# #+LATEX_HEADER: \usepackage[citestyle=numeric-comp, maxcitenames=1, maxbibnames=4, doi=false, isbn=false, eprint=true, backend=bibtex, hyperref=true, url=false, natbib=true]{biblatex}
+# #+LATEX_HEADER: \usepackage[backend=biber, sorting=nyvt, style=authoryear, firstinits]{biblatex}
+# #+LATEX_HEADER: \usepackage[backend=natbib, giveninits=true]{biblatex}
+#+LATEX_HEADER: \usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+
+** Exporter Settings
+#+AUTHOR: Madhusudan Kumar
+#+EXPORT_FILE_NAME: ./resume.pdf
+#+OPTIONS: toc:nil title:nil H:1
+** Macros
+#+MACRO: cvevent \cvevent{$1}{$2}{$3}{$4}
+#+MACRO: cvachievement \cvachievement{$1}{$2}{$3}{$4}
+#+MACRO: cvtag \cvtag{$1}
+#+MACRO: divider \divider
+#+MACRO: par-div \par\divider
+#+MACRO: new-page \newpage
+#+MACRO: cveventacad \cveventacad{$1}{$2}{$3}{$4}{$5}
+#+MACRO: cveventcomp \cveventcomp{$1}{$2}{$3}{$4}{$5}
+#+MACRO: cvdomain \cvdomain{$1}
+
+* CV Header :ignore:
+** Photo & Tagline :ignore:
+#+begin_export latex
+\name{Madhusudan Kumar}
+\photoR{2.8cm}{logo.png}
+\tagline{Data Scientist}
+#+end_export
+
+** Personal Info :ignore:
+#+begin_export latex
+\personalinfo{
+  %\homepage{www.aidanscannell.com}
+  \email{kumarmadhusudhan689@gmail.com}
+  \phone{+91 9969072292}
+  %\location{Mumbai, India}
+  \github{max12525k}
+  \linkedin{max12525}
+  %\dob{22 April 1994}
+  %\driving{UK Driving Licence}
+}
+\makecvheader
+#+end_export
+
+* CV Column 1 :ignore:
+#+begin_export latex
+\begin{paracol}{2}
+#+end_export
+** Personal Statement Secondmind :ignore:noexport:
+#+begin_export latex
+ \begin{quote}
+ ``I am an aspiring data scientist who loves exploring new things with data''
+ \end{quote}
+#+end_export
+** Personal Statement Amazon :ignore:noexport:
+#+begin_export latex
+ \begin{quote}
+ ``I am an aspiring data scientist who loves exploring new things with data''
+ \end{quote}
+#+end_export
+** Professional Experience
+*** Data Scientist :ignore:
+{{{cvevent(Data Scientist (R\&D),Tata Consultancy Services, Apr 2019 -- Ongoing, Mumbai\, India)}}}
+
+*** Project1 :ignore:
+{{{cvdomain(Telecommunication)}}}
+- Proposed, designed & built python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 70%
+- Developed GUI application for end to end exploration of ML use cases
+- Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN)
+- Reduced number of tickets by automating the identification of alarm’s cluster with root alarm
+- Implemented and deployed real time anomaly detection on Azure, reducing detection time by 12 minutes
+- Mentored two peers for integration of ML use cases across 4+ applications
+
+{{{cvtag(Association rule mining)}}}
+{{{cvtag(Elasticsearch)}}}
+{{{cvtag(Anomaly detection)}}}
+{{{cvtag(Scikit-learn)}}}
+{{{cvtag(Pytest)}}}
+{{{cvtag(Leadership)}}}
+{{{cvtag(Communication)}}}
+{{{cvtag(TDD)}}}
+
+***  Project 2 :ignore:
+{{{par-div}}}
+{{{cvdomain(Insurance)}}}
+- Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10%
+- Explored and generated Covid-19 business impact report across all policies
+# - Forecast monthly data storage capacity requirement for effective functioning of database
+# - Estimate CRUD execution time for improved delivery of executive reports
+
+{{{cvtag(Timeseries forecasting)}}}
+{{{cvtag(SQL)}}}
+{{{cvtag(Data wrangling)}}}
+{{{cvtag(ARIMA)}}}
+*** Research Intership :ignore:
+{{{par-div}}}
+
+ {{{cvevent(Research Internship, Chiba University, May 2016 - Jun 2016, Chiba\, Japan)}}}
+# {{{cveventacad(Research Internship, Chiba University, Prof. T. Sakurai, May 2016 - Jun 2016, Chiba\, Japan)}}}
+
+- Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
+- Conducted nonlinear stability analysis to obtain significant parameters & visualize thier behaviour near stability points to understand contribution to pattern formation
+
+{{{cvtag(Visualization)}}}
+{{{cvtag(MATLAB)}}}
+{{{cvtag(Linear Algebra)}}}
+
+** Projects :noexport:
+*** Masters thesis :ignore:noexport:
+# {{{cveventacad(Reliability Analysis of Self-Aware Components on Network, Indian Institue of Technology\, Bomaby , Prof. M.S. Kulkarni \& Prof. T.K Bhandarkar, July 2017 - Nov 2018, Mumbai\, India)}}}
+# {{{cveventacad(Masters Thesis, Indian Institue of Technology\, Bomaby , Prof. M.S. Kulkarni, July 2017 - Nov 2018, Mumbai\, India)}}}
+- Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time of network
+- Proposed and Implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
+- Sucessfully modelled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
+{{{par-div}}}
+** Position of Responsibility
+{{{cvevent(Overall Coordinator, IIT-BBC, Apr 2015 - Mar 2016, Mumbai\, India)}}}
+- Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
+# -  Interviewed 10+ Artists & Covered 40+ events in SpicMacay convention 2015
+{{{cvtag(Leadership)}}}
+{{{cvtag(Communication)}}}
+{{{cvtag(Video editing)}}}
+# {{{cvtag()}}}
+
+
+** Newpage :ignore:
+{{{new-page}}}
+
+** A day of my life :noexport:
+# #+begin_export latex
+# % \medskip
+
+# % \cvsection{A Day of My Life}
+
+# % % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+# % % \wheelchart{outer radius}{inner radius}{
+# % % comma-separated list of value/text width/color/detail}
+# % \wheelchart{1.5cm}{0.5cm}{%
+# %   6/8em/accent!30/{Sleep,\\beautiful sleep},
+# %   3/8em/accent!40/Eat,
+# %   8/8em/accent!60/Work Fast to Sleep More,
+# %   2/10em/accent/Sleep More,
+# %   5/6em/accent!20/pull everyone's leg,
+# % }
+
+# % % use ONLY \newpage if you want to force a page break for
+# % % ONLY the current column
+# % \newpage
+# #+end_export
+
+** Newpage :ignore:noexport:
+{{{new-page}}}
+
+
+* CV Column 2 :ignore:
+# Switch to the right column - will automatically move to the next page.
+#+begin_export latex
+\switchcolumn
+#+end_export
+
+** Skills
+{{{cvtag(Python)}}}
+{{{cvtag(NumPy)}}}
+{{{cvtag(Plotly)}}}
+{{{cvtag(Pytest)}}}
+{{{cvtag(Scikit-learn)}}}
+{{{cvtag(Pandas)}}}
+{{{cvtag(Fastai)}}}
+
+{{{divider}}}
+
+{{{cvtag(FastAPI)}}}
+{{{cvtag(SQL)}}}
+{{{cvtag(Elasticsearch)}}}
+
+{{{divider}}}
+
+{{{cvtag(Git/GitHub)}}}
+{{{cvtag(Azure)}}}
+{{{cvtag(Linux)}}}
+{{{cvtag(Docker)}}}
+
+** Education
+{{{cvevent(M.Tech\ in Mechanical Engineering, IIT-B, July 2017 - Nov 2018,)}}}
+- Specialization in CADA
+- Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time
+- Proposed and implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
+
+{{{divider}}}
+
+{{{cvevent(B.Tech\ in Mechanical Engineering, IIT-B, July 2013 - June 2017,)}}}
+- Data Analysis and Interpretation
+- Statistical Machine Learning and Data Mining
+
+
+** Newpage :ignore:
+#+BEGIN_EXPORT latex
+% \newpage
+#+END_EXPORT
+
+** My Life Philosophy :noexport:
+#+begin_export latex
+% \begin{quote}
+% ``Love''
+% \end{quote}
+#+end_export
+
+# ** Most Proud Of :ignore:
+# #+begin_export latex
+# \cvsection{Most Proud of}
+# #+end_export
+
+# #+begin_export latex
+#
+# #+end_export
+
+# #+begin_export latex
+# \divider
+
+# #+end_export
+
+** Extracurricular
+
+- Mentored 100+ students to produce 20+ short films during Freshizza festival
+- Core team member of "Mechanical Freshie", a video with more than 630,000 views
+- Supported students with physics classes for IIT-JEE exam
+# {{{cvachievement(\faCertificate,Mentor freshmen in Video E, )}}}
+# - Customize emacs in free time for optimised development
+# {{{divider}}}
+
+** Certification
+
+- Data Analysis with Pandas and Python (Udemy)
+- Python for Timeseries Data Analysis (Udemy)
+# {{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
+
+** Languages :noexport:
+#+begin_export latex
+% \cvsection{Languages}
+
+% \cvskill{English}{5}
+% \divider
+
+% \cvskill{Hindi}{4}
+% \divider
+
+% \cvskill{Bhojpuri}{3}
+
+% %% Yeah I didn't spend too much time making all the
+% %% spacing consistent... sorry. Use \smallskip, \medskip,
+% %% \bigskip, \vpsace etc to make ajustments.
+% \medskip
+#+end_export
+
+
+* Back Matter :ignore:
+#+begin_export latex
+\end{paracol}
+\end{document}
+#+end_export

@@ -1,0 +1,189 @@
+% Created 2021-11-30 Tue 19:42
+% Intended LaTeX compiler: pdflatex
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% Use roboto and lato for fonts
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\usepackage{paracol}
+\columnratio{0.6} % Set the left/right column width ratio to 6:4.
+\usepackage[bottom]{footmisc}
+\DeclareNameAlias{sortname}{given-family}
+\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+\author{Madhusudan Kumar}
+\date{\today}
+\title{}
+\begin{document}
+
+\name{Madhusudan Kumar}
+\photoR{2.8cm}{logo.png}
+\tagline{Data Scientist}
+
+\personalinfo{
+  %\homepage{www.aidanscannell.com}
+  \email{kumarmadhusudhan689@gmail.com}
+  \phone{+91 9969072292}
+  %\location{Mumbai, India}
+  \github{max12525k}
+  \linkedin{max12525}
+  %\dob{22 April 1994}
+  %\driving{UK Driving Licence}
+}
+\makecvheader
+
+\begin{paracol}{2}
+\cvsection{Professional Experience}
+\label{sec:org4b40362}
+\cvevent{Data Scientist (R\&D)}{Tata Consultancy Services}{ Apr 2019 -- Ongoing}{ Mumbai, India}
+\cvdomain{Telecommunication}
+\begin{itemize}
+\item Proposed, designed \& built python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 70\%
+\item Developed GUI application for end to end exploration of ML use cases
+\item Improved predictive maintenance by one day-ahead forecasting of faults (CORE \& RAN)
+\item Reduced number of tickets by automating the identification of alarm’s cluster with root alarm
+\item Implemented and deployed real time anomaly detection on Azure, reducing detection time by 12 minutes
+\item Mentored two peers for integration of ML use cases across 4+ applications
+\end{itemize}
+
+\cvtag{Association rule mining}
+\cvtag{Elasticsearch}
+\cvtag{Anomaly detection}
+\cvtag{Scikit-learn}
+\cvtag{Pytest}
+\cvtag{Leadership}
+\cvtag{Communication}
+\cvtag{TDD}
+\par\divider
+\cvdomain{Insurance}
+\begin{itemize}
+\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10\%
+\item Explored and generated Covid-19 business impact report across all policies
+\end{itemize}
+
+\cvtag{Timeseries forecasting}
+\cvtag{SQL}
+\cvtag{Data wrangling}
+\cvtag{ARIMA}
+\par\divider
+
+\cvevent{Research Internship}{ Chiba University}{ May 2016 - Jun 2016}{ Chiba, Japan}
+
+\begin{itemize}
+\item Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
+\item Conducted nonlinear stability analysis to obtain significant parameters \& visualize thier behaviour near stability points to understand contribution to pattern formation
+\end{itemize}
+
+\cvtag{Visualization}
+\cvtag{MATLAB}
+\cvtag{Linear Algebra}
+
+\cvsection{Position of Responsibility}
+\label{sec:org7676dd4}
+\cvevent{Overall Coordinator}{ IIT-BBC}{ Apr 2015 - Mar 2016}{ Mumbai, India}
+\begin{itemize}
+\item Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
+\end{itemize}
+
+\cvtag{Leadership}
+\cvtag{Communication}
+\cvtag{Video editing}
+
+
+\newpage
+
+\switchcolumn
+
+\cvsection{Skills}
+\label{sec:org71382db}
+\cvtag{Python}
+\cvtag{NumPy}
+\cvtag{Plotly}
+\cvtag{Pytest}
+\cvtag{Scikit-learn}
+\cvtag{Pandas}
+\cvtag{Fastai}
+
+\divider
+
+\cvtag{FastAPI}
+\cvtag{SQL}
+\cvtag{Elasticsearch}
+
+\divider
+
+\cvtag{Git/GitHub}
+\cvtag{Azure}
+\cvtag{Linux}
+\cvtag{Docker}
+
+\cvsection{Education}
+\label{sec:org3fcd56b}
+\cvevent{M.Tech\ in Mechanical Engineering}{ IIT-B}{ July 2017 - Nov 2018}{}
+\begin{itemize}
+\item Specialization in CADA
+\item Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time
+\item Proposed and implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
+\end{itemize}
+
+\divider
+
+\cvevent{B.Tech\ in Mechanical Engineering}{ IIT-B}{ July 2013 - June 2017}{}
+\begin{itemize}
+\item Data Analysis and Interpretation
+\item Statistical Machine Learning and Data Mining
+\end{itemize}
+
+
+% \newpage
+
+\cvsection{Extracurricular}
+\label{sec:org4a65c41}
+
+\begin{itemize}
+\item Mentored 100+ students to produce 20+ short films during Freshizza festival
+\item Core team member of ``Mechanical Freshie'', a video with more than 630,000 views
+\item Supported students with physics classes for IIT-JEE exam
+\end{itemize}
+
+\cvsection{Certification}
+\label{sec:org06b6975}
+
+\begin{itemize}
+\item Data Analysis with Pandas and Python (Udemy)
+\item Python for Timeseries Data Analysis (Udemy)
+\end{itemize}
+
+\end{paracol}
+\end{document}
+\end{document}
