@@ -123,11 +123,11 @@
 
 *** Project1 :ignore:
 {{{cvdomain(Telecommunication)}}}
-- Proposed, designed & built python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 70%
-- Developed GUI application for end to end exploration of ML use cases
-- Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN)
-- Reduced number of tickets by automating the identification of alarm’s cluster with root alarm
-- Implemented and deployed real time anomaly detection on Azure, reducing detection time by 12 minutes
+- Proposed, designed & built python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
+- Developed GUI application for end to end exploration of ML use cases by data scientist and non data scientist alike
+- Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN) (POC)
+- Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
+- Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
 - Mentored two peers for integration of ML use cases across 4+ applications
 
 {{{cvtag(Association rule mining)}}}
