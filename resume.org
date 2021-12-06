@@ -123,8 +123,8 @@
 
 *** Project1 :ignore:
 {{{cvdomain(Telecommunication)}}}
-- Proposed, designed & built python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
-- Developed GUI application for end to end exploration of ML use cases by data scientist and non data scientist alike
+- Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
+- Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
 - Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN) (POC)
 - Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
 - Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
@@ -143,7 +143,7 @@
 {{{par-div}}}
 {{{cvdomain(Insurance)}}}
 - Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10%
-- Explored and generated Covid-19 business impact report across all policies
+- Explored and generated Covid-19 business impact report against all policies
 # - Forecast monthly data storage capacity requirement for effective functioning of database
 # - Estimate CRUD execution time for improved delivery of executive reports
 
@@ -158,7 +158,7 @@
 # {{{cveventacad(Research Internship, Chiba University, Prof. T. Sakurai, May 2016 - Jun 2016, Chiba\, Japan)}}}
 
 - Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
-- Conducted nonlinear stability analysis to obtain significant parameters & visualize thier behaviour near stability points to understand contribution to pattern formation
+- Conducted nonlinear stability analysis to obtain significant parameters & visualize their behaviour near stability points to understand contribution to pattern formation
 
 {{{cvtag(Visualization)}}}
 {{{cvtag(MATLAB)}}}
