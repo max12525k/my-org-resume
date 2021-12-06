@@ -162,7 +162,7 @@
 
 {{{cvtag(Visualization)}}}
 {{{cvtag(MATLAB)}}}
-{{{cvtag(Linear Algebra)}}}
+{{{cvtag(Linear algebra)}}}
 
 ** Projects :noexport:
 *** Masters thesis :ignore:noexport:
@@ -240,14 +240,14 @@
 {{{cvtag(Docker)}}}
 
 ** Education
-{{{cvevent(M.Tech\ in Mechanical Engineering, IIT-B, July 2017 - Nov 2018,)}}}
+{{{cvevent(M.Tech\ in Mechanical Engineering, IIT-B, Jul 2017 - Nov 2018,)}}}
 - Specialization in CADA
 - Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time
 - Proposed and implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
 
 {{{divider}}}
 
-{{{cvevent(B.Tech\ in Mechanical Engineering, IIT-B, July 2013 - June 2017,)}}}
+{{{cvevent(B.Tech\ in Mechanical Engineering, IIT-B, Jul 2013 - Jun 2017,)}}}
 - Data Analysis and Interpretation
 - Statistical Machine Learning and Data Mining
 
@@ -289,8 +289,8 @@
 
 ** Certification
 
-- Data Analysis with Pandas and Python (Udemy)
-- Python for Timeseries Data Analysis (Udemy)
+- Data Analysis with Pandas and Python
+- Python for Timeseries Data Analysis
 # {{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
 
 ** Languages :noexport:
