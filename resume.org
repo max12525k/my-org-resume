@@ -3,7 +3,7 @@
 :ID:       8f68008d-a285-4bae-a653-5488ec7ebd44
 :END:
  adapted from @aidanscannell/[[https://github.com/aidanscannell/my-org-resume.git][my-org-resume]]
-** LaTeX Config
+** LaTeX Config :ATTACH:
 #+BEGIN_SRC emacs-lisp :exports none  :results none :eval always
 (setq org-latex-logfiles-extensions (quote ("lof" "lot" "tex~" "aux" "idx" "log" "out" "toc" "nav" "snm" "vrb" "dvi" "fdb_latexmk" "blg" "brf" "fls" "entoc" "ps" "spl" "bbl" "xmpi" "run.xml" "bcf")))
 (add-to-list 'org-latex-classes
@@ -55,7 +55,7 @@
 #+LATEX_HEADER: \columnratio{0.6} % Set the left/right column width ratio to 6:4.
 #+LATEX_HEADER: \usepackage[bottom]{footmisc}
 *** Bibliography
-# #+LATEX_HEADER: \DeclareNameAlias{sortname}{last-first}
+# #+LATEX_HEADER: \DeclareNameAlias{sortna nme}{last-first}
 #+LATEX_HEADER: \DeclareNameAlias{sortname}{given-family}
 # #+LATEX_HEADER: \addbibresource{aidan.bib}
 # #+LATEX_HEADER: \usepackage[citestyle=numeric-comp, maxcitenames=1, maxbibnames=4, doi=false, isbn=false, eprint=true, backend=bibtex, hyperref=true, url=false, natbib=true]{biblatex}
@@ -83,20 +83,20 @@
 #+begin_export latex
 \name{Madhusudan Kumar}
 \photoR{2.8cm}{logo.png}
-\tagline{Data Scientist}
+\tagline{Senior Data Scientist}
 #+end_export
 
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{
-  %\homepage{www.aidanscannell.com}
+  %\homepage{None}
   \email{kumarmadhusudhan689@gmail.com}
   \phone{+91 9969072292}
   %\location{Mumbai, India}
   \github{max12525k}
   \linkedin{max12525}
-  %\dob{22 April 1994}
-  %\driving{UK Driving Licence}
+  %\dob{12 Jan 1995}
+  %\driving{None}
 }
 \makecvheader
 #+end_export
@@ -118,32 +118,48 @@
  \end{quote}
 #+end_export
 ** Professional Experience
+*** Senior Data Scientist :ignore:
+{{{cvevent(Senior Data Scientist, Tata Consultancy Services, Dec 2021 - Ongoing, Mumbai\, India)}}}
+
+*** Project1 :ignore:
+{{{cvdomain(Telecommunication)}}}
+- Headed a team of 6 members, developing ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event
+- Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
+- Headed client engagement calls, enabling modeling transperency, building trust and gathering client requirement for ML solutions
+- Lead the product development of web based ML exporlation tool for faster development of ML solutions by data scientist
+
+{{{cvtag(Federated ML)}}}
+{{{cvtag(Leadership)}}}
+{{{cvtag(Deep Learning)}}}
+{{{cvtag(RL)}}}
+{{{cvtag(MLOps)}}}
 *** Data Scientist :ignore:
-{{{cvevent(Data Scientist (R\&D),Tata Consultancy Services, Apr 2019 -- Ongoing, Mumbai\, India)}}}
+{{{par-div}}}
+{{{cvevent(Data Scientist, Tata Consultancy Services, Apr 2019 -- Nov 2021, Mumbai\, India)}}}
 
 *** Project1 :ignore:
 {{{cvdomain(Telecommunication)}}}
 - Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
-- Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
+# - Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
 - Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN) (POC)
 - Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
 - Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
-- Mentored two peers for integration of ML use cases across 4+ applications
+# - Mentored two peers for integration of ML use cases across 4+ applications
 
-{{{cvtag(Association rule mining)}}}
-{{{cvtag(Elasticsearch)}}}
-{{{cvtag(Anomaly detection)}}}
-{{{cvtag(Scikit-learn)}}}
-{{{cvtag(Pytest)}}}
-{{{cvtag(Leadership)}}}
-{{{cvtag(Communication)}}}
+{{{cvtag(Text mining)}}}
 {{{cvtag(TDD)}}}
+{{{cvtag(Anomaly detection)}}}
+{{{cvtag(Communication)}}}
+# {{{cvtag(Leadership)}}}
+# {{{cvtag(Pytest)}}}
+# {{{cvtag(Elasticsearch)}}}
+# {{{cvtag(Scikit-learn)}}}
 
 ***  Project 2 :ignore:
 {{{par-div}}}
 {{{cvdomain(Insurance)}}}
 - Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10%
-- Explored and generated Covid-19 business impact report against all policies
+# - Explored and generated Covid-19 business impact report against all policies
 # - Forecast monthly data storage capacity requirement for effective functioning of database
 # - Estimate CRUD execution time for improved delivery of executive reports
 
@@ -172,7 +188,7 @@
 - Proposed and Implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
 - Sucessfully modelled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
 {{{par-div}}}
-** Position of Responsibility
+** Position of Responsibility :noexport:
 {{{cvevent(Overall Coordinator, IIT-BBC, Apr 2015 - Mar 2016, Mumbai\, India)}}}
 - Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
 # -  Interviewed 10+ Artists & Covered 40+ events in SpicMacay convention 2015
@@ -224,14 +240,14 @@
 {{{cvtag(Pytest)}}}
 {{{cvtag(Scikit-learn)}}}
 {{{cvtag(Pandas)}}}
-{{{cvtag(Fastai)}}}
+{{{cvtag(Keras)}}}
 
 {{{divider}}}
 
 {{{cvtag(FastAPI)}}}
 {{{cvtag(SQL)}}}
 {{{cvtag(Elasticsearch)}}}
-
+{{{cvtag(MLOps)}}}
 {{{divider}}}
 
 {{{cvtag(Git/GitHub)}}}
@@ -247,7 +263,9 @@
 
 {{{divider}}}
 
+*** B. tech :ignore:
 {{{cvevent(B.Tech\ in Mechanical Engineering, IIT-B, Jul 2013 - Jun 2017,)}}}
+- Sucessfully headed official video channel of IIT-BBC, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
 - Data Analysis and Interpretation
 - Statistical Machine Learning and Data Mining
 
@@ -291,7 +309,7 @@
 
 - Data Analysis with Pandas and Python
 - Python for Timeseries Data Analysis
-# {{{cvachievement(\faTrophy, The Duke of Edinburgh's Award, Bronze/Silver/Gold)}}}
+# {{{cvachievement(\faTrophy,abc , Bronze/Silver/Gold)}}}
 
 ** Languages :noexport:
 #+begin_export latex
