@@ -40,17 +40,17 @@
 \columnratio{0.6} % Set the left/right column width ratio to 6:4.
 \usepackage[bottom]{footmisc}
 \DeclareNameAlias{sortname}{given-family}
-\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+%\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
 \author{Madhusudan Kumar}
 \date{\today}
 \title{}
-\hypersetup{
- pdfauthor={Madhusudan Kumar},
- pdftitle={},
- pdfkeywords={},
- pdfsubject={},
- pdfcreator={Emacs 28.1 (Org mode 9.6)}, 
- pdflang={English}}
+% \hypersetup{
+%  pdfauthor={Madhusudan Kumar},
+%  pdftitle={},
+%  pdfkeywords={},
+%  pdfsubject={},
+%  pdfcreator={Emacs 28.1 (Org mode 9.6)}, 
+%  pdflang={English}}
 \begin{document}
 
 \name{Madhusudan Kumar}
@@ -72,27 +72,45 @@
 \begin{paracol}{2}
 \cvsection{Professional Experience}
 \label{sec:orgb71bfc8}
-\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Dec 2021 - Ongoing}{ Mumbai, India}
+\cvevent{Senior Data Scientist}{SecureThings.ai}{ Sep 2022 - Ongoing}{ Mumbai, India}
+\cvdomain{Automotive Cybersecurity}
+\begin{itemize}
+
+\item Utilize advanced machine learning techniques to extract highly specific cybersecurity labels, classify them into entities and relationships, and populate a knowledge graph for improved threat detection and response
+\item Design Graph Neural Networks to extract both statistics and semantics from the knowledge graph for feature rich threat detection
+%\item Develop Graph Neural Networks to extract statistics along with semantics from KG for usecases
+\end{itemize}
+
+\cvtag{NER}
+\cvtag{MongoDB}
+\cvtag{NLP}
+\cvtag{Knowledge Graph}
+\cvtag{API}
+
+\cvtag{Graph Neural Network}
+\cvtag{Semantic Analysis}
+\cvtag{Statistics}
+
+\par\divider
+
+\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Dec 2021 - Sep 2022}{ Mumbai, India}
 \cvdomain{Telecommunication}
 \begin{itemize}
-\item Headed a team of 6 members, developing ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15\% reduction in events and enable close loop automation for 25\% event
-\item Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
-\item Headed client engagement calls, enabling modeling transperency, building trust and gathering client requirement for ML solutions
-\item Lead the product development of web based ML exporlation tool for faster development of ML solutions by data scientist
+\item Headed a team of 6 members, proposing 10+ use case for fault and performance management leading to decrease in 15\% reduction in events 
+% \item Collaborated with data engineer, domain expert and solution architect along with leading 6 team members to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
+\item Headed client engagement calls, enabling modeling transparency and explainability \& gathering requirement for ML solutions
 \end{itemize}
 
 \cvtag{Federated ML}
-\cvtag{Leadership}
+\cvtag{Prediction}
 \cvtag{Deep Learning}
-\cvtag{RL}
 \cvtag{MLOps}
 \par\divider
 \cvevent{Data Scientist}{ Tata Consultancy Services}{ Apr 2019 -- Nov 2021}{ Mumbai, India}
 \cvdomain{Telecommunication}
-\begin{itemize}
-\item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%
-\end{itemize}
-
+% \begin{itemize}
+% \item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%
+% \end{itemize}
 \begin{itemize}
 \item Improved predictive maintenance by one day-ahead forecasting of faults (CORE \& RAN) (POC)
 \item Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
@@ -107,12 +125,12 @@
 \par\divider
 \cvdomain{Insurance}
 \begin{itemize}
-\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10\%
+\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average MAPE by 10\%
 \end{itemize}
 
 \cvtag{Timeseries forecasting}
 \cvtag{SQL}
-\cvtag{Data wrangling}
+\cvtag{Data Analysis}
 \cvtag{ARIMA}
 \par\divider
 
@@ -120,7 +138,7 @@
 
 \begin{itemize}
 \item Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
-\item Conducted nonlinear stability analysis to obtain significant parameters \& visualize their behaviour near stability points to understand contribution to pattern formation
+% \item Conducted nonlinear stability analysis to obtain significant parameters \& visualize their behaviour near stability points to understand contribution to pattern formation
 \end{itemize}
 
 \cvtag{Visualization}
@@ -136,7 +154,7 @@
 \cvtag{Python}
 \cvtag{NumPy}
 \cvtag{Plotly}
-\cvtag{Pytest}
+\cvtag{Statistics}
 \cvtag{Scikit-learn}
 \cvtag{Pandas}
 \cvtag{Keras}
@@ -145,7 +163,7 @@
 
 \cvtag{FastAPI}
 \cvtag{SQL}
-\cvtag{Elasticsearch}
+\cvtag{MongoDB}
 \cvtag{MLOps}
 \divider
 
