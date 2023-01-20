@@ -220,6 +220,7 @@
 \NewInfoField{dob}{\faBirthdayCake}
 \NewInfoField{driving}{\faCar}
 
+
 % v1.2: Support for multiple photos
 \newlength{\altacv@photos@width}
 \newlength{\altacv@photo@diam@left}
