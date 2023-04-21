@@ -118,21 +118,39 @@
  \end{quote}
 #+end_export
 ** Professional Experience
-*** Senior Data Scientist :ignore:
-{{{cvevent(Senior Data Scientist, Tata Consultancy Services, Dec 2021 - Ongoing, Mumbai\, India)}}}
+*** Senior Data Scientist securethings :ignore:
+{{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Ongoing, Mumbai\ India)}}}
+
+{{{cvdomain(Automative Cybersecurity)}}}
+- Utilize Deep learning techniques to extract cybersecurity labels, entities and relationships to create knowledge graph.
+
+- Developed and maintain APIs on AWS cloud to facilitate security applications.
+
+  {{{cvtag(NLP)}}}
+  {{{cvtag(NER)}}}
+  {{{cvtag(FastAPI)}}}
+  {{{cvtag(MongoDB)}}}
+  {{{cvtag(AWS)}}}
+
+*** Senior Data Scientist TCS :ignore:
+{{{par-div}}}
+{{{cvevent(Senior Data Scientist, Tata Consultancy Services, Feb 2022 - Sep 2022, Mumbai\, India)}}}
 
 *** Project1 :ignore:
 {{{cvdomain(Telecommunication)}}}
-- Headed a team of 6 members, developing ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event
-- Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
-- Headed client engagement calls, enabling modeling transperency, building trust and gathering client requirement for ML solutions
-- Lead the product development of web based ML exporlation tool for faster development of ML solutions by data scientist
+- Led a team of 6 in designing a federated ML architecture for 10+ fault and performance management usecase across 5000+ sites, in partnership with data engineer, domain expert and solution architect for swift response.
+# - developing ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event
+# - Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
+- Headed client calls to ensure model transparency and explainability while gathering requirements for ML solutions
+# - Lead the product development of web based ML exporlation tool for faster development of ML solutions by data scientist
 
 {{{cvtag(Federated ML)}}}
-{{{cvtag(Leadership)}}}
-{{{cvtag(Deep Learning)}}}
-{{{cvtag(RL)}}}
-{{{cvtag(MLOps)}}}
+{{{cvtag(Client Engagement)}}}
+{{{cvtag(DL)}}}
+# {{{cvtag(Leadership)}}}
+# {{{cvtag(DL)}}}
+# {{{cvtag(RL)}}}
+# {{{cvtag(MLOps)}}}
 *** Data Scientist :ignore:
 {{{par-div}}}
 {{{cvevent(Data Scientist, Tata Consultancy Services, Apr 2019 -- Nov 2021, Mumbai\, India)}}}
@@ -140,16 +158,18 @@
 *** Project1 :ignore:
 {{{cvdomain(Telecommunication)}}}
 - Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
+- Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss (IP filing in progress)
+# - Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
 # - Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
-- Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN) (POC)
-- Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
-- Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
+# - Improved predictive maintenance by one day-ahead forecasting of faults (CORE & RAN) (POC)
+# - Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
+# - Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
 # - Mentored two peers for integration of ML use cases across 4+ applications
 
 {{{cvtag(Text mining)}}}
-{{{cvtag(TDD)}}}
+{{{cvtag(Event Forecasting)}}}
 {{{cvtag(Anomaly detection)}}}
-{{{cvtag(Communication)}}}
+{{{cvtag(TDD)}}}
 # {{{cvtag(Leadership)}}}
 # {{{cvtag(Pytest)}}}
 # {{{cvtag(Elasticsearch)}}}
@@ -163,22 +183,25 @@
 # - Forecast monthly data storage capacity requirement for effective functioning of database
 # - Estimate CRUD execution time for improved delivery of executive reports
 
-{{{cvtag(Timeseries forecasting)}}}
-{{{cvtag(SQL)}}}
-{{{cvtag(Data wrangling)}}}
+{{{cvtag(Timeseries Forecasting)}}}
+{{{cvtag(Data Analysis)}}}
+{{{cvtag(Reporting)}}}
 {{{cvtag(ARIMA)}}}
+# {{{cvtag(Data Analysis)}}}
+# {{{cvtag(Data wrangling)}}}
+# {{{cvtag(ARIMA)}}}
 *** Research Intership :ignore:
 {{{par-div}}}
-
  {{{cvevent(Research Internship, Chiba University, May 2016 - Jun 2016, Chiba\, Japan)}}}
 # {{{cveventacad(Research Internship, Chiba University, Prof. T. Sakurai, May 2016 - Jun 2016, Chiba\, Japan)}}}
 
 - Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
-- Conducted nonlinear stability analysis to obtain significant parameters & visualize their behaviour near stability points to understand contribution to pattern formation
+# - Conducted nonlinear stability analysis to obtain significant parameters & visualize their behaviour near stability points to understand contribution to pattern formation
 
 {{{cvtag(Visualization)}}}
 {{{cvtag(MATLAB)}}}
 {{{cvtag(Linear algebra)}}}
+# {{{cvtag(Overseas Experience)}}}
 
 ** Projects :noexport:
 *** Masters thesis :ignore:noexport:
@@ -245,13 +268,13 @@
 {{{divider}}}
 
 {{{cvtag(FastAPI)}}}
+{{{cvtag(MongoDB)}}}
 {{{cvtag(SQL)}}}
-{{{cvtag(Elasticsearch)}}}
-{{{cvtag(MLOps)}}}
+{{{cvtag(MLFLow)}}}
 {{{divider}}}
 
 {{{cvtag(Git/GitHub)}}}
-{{{cvtag(Azure)}}}
+{{{cvtag(AWS)}}}
 {{{cvtag(Linux)}}}
 {{{cvtag(Docker)}}}
 

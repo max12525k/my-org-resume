@@ -1,4 +1,4 @@
-% Created 2022-08-18 Thu 23:16
+% Created 2023-04-21 Fri 17:27
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 
@@ -40,17 +40,17 @@
 \columnratio{0.6} % Set the left/right column width ratio to 6:4.
 \usepackage[bottom]{footmisc}
 \DeclareNameAlias{sortname}{given-family}
-%\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
+\usepackage[style=trad-abbrv,sorting=none,sortcites=true,doi=false,url=false,giveninits=true,hyperref]{biblatex}
 \author{Madhusudan Kumar}
 \date{\today}
 \title{}
-% \hypersetup{
-%  pdfauthor={Madhusudan Kumar},
-%  pdftitle={},
-%  pdfkeywords={},
-%  pdfsubject={},
-%  pdfcreator={Emacs 28.1 (Org mode 9.6)}, 
-%  pdflang={English}}
+\hypersetup{
+ pdfauthor={Madhusudan Kumar},
+ pdftitle={},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.6.1)}, 
+ pdflang={English}}
 \begin{document}
 
 \name{Madhusudan Kumar}
@@ -71,42 +71,42 @@
 
 \begin{paracol}{2}
 \cvsection{Professional Experience}
-\label{sec:orgb71bfc8}
-\cvevent{Senior Data Scientist}{SecureThings.ai}{ Sep 2022 - Ongoing}{ Mumbai, India}
-\cvdomain{Automotive Cybersecurity}
+\label{sec:org6ed8d3e}
+\cvevent{Senior Data Scientist}{ SecureThings.ai}{ Sep 2022 - Ongoing}{ Mumbai\ India}
+
+\cvdomain{Automative Cybersecurity}
 \begin{itemize}
-\item Utilize advanced machine learning techniques to extract highly specific cybersecurity labels, entities and relationships
-\item Design Graph Neural Networks to extract contextual features from knowledge graph for improved threat detection
-%\item Develop Graph Neural Networks to extract statistics along with semantics from KG for usecases
-\end{itemize}
-\cvtag{NER}
+\item Utilize Deep learning techniques to extract cybersecurity labels, entities and relationships to create knowledge graph.
+
+\item Developed and maintain APIs on AWS cloud to facilitate security applications.
+
 \cvtag{NLP}
-\cvtag{API}
-\cvtag{Semantic Analysis}
-\cvtag{Statistics}
-
+\cvtag{NER}
+\cvtag{FastAPI}
+\cvtag{MongoDB}
+\cvtag{AWS}
+\end{itemize}
 \par\divider
-
-\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Dec 2021 - Sep 2022}{ Mumbai, India}
+\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Feb 2022 - Sep 2022}{ Mumbai, India}
 \cvdomain{Telecommunication}
 \begin{itemize}
-% \item Headed a team of 6 members to develop 10+ use case for fault and performance management, coordinating with  
-\item Led a team of 6 in designing a federated ML architecture for 10+ fault and performance management usecases across 5000+ sites, in partnership with a data engineer, domain expert, and solution architect for swift response. 
-\item Headed client calls to ensure transparency and explainability of models while gathering requirements for ML solutions.
+\item Led a team of 6 in designing a federated ML architecture for 10+ fault and performance management usecase across 5000+ sites, in partnership with data engineer, domain expert and solution architect for swift response.
+\end{itemize}
+
+\begin{itemize}
+\item Headed client calls to ensure model transparency and explainability while gathering requirements for ML solutions
 \end{itemize}
 
 \cvtag{Federated ML}
 \cvtag{Client Engagement}
-\cvtag{Online Learning}
-% \cvtag{MLOps}
+\cvtag{DL}
+
 \par\divider
-\cvevent{Data Scientist}{ Tata Consultancy Services}{ Apr 2019 -- Feb 2022}{ Mumbai, India}
+\cvevent{Data Scientist}{ Tata Consultancy Services}{ Apr 2019 -- Nov 2021}{ Mumbai, India}
 \cvdomain{Telecommunication}
 \begin{itemize}
 \item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%
-% \item Enable Predictive maintenance of faults by one day ahead forecast and Reduced number of tickets by automating the identification of alarm’s cluster with root alarm (POC)
-% \item Improved network performance by deploying real time anomaly detection of network loss and latency on azure cloud (POC)
-\item Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss.
+\item Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss (IP filing in progress)
 \end{itemize}
 
 \cvtag{Text mining}
@@ -117,21 +117,19 @@
 \par\divider
 \cvdomain{Insurance}
 \begin{itemize}
-\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average MAPE by 10\%
+\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10\%
 \end{itemize}
 
-\cvtag{Timeseries forecasting}
-\cvtag{Reporting}
+\cvtag{Timeseries Forecasting}
 \cvtag{Data Analysis}
+\cvtag{Reporting}
 \cvtag{ARIMA}
 
 \par\divider
-
-\cvevent{Research Internship}{ Chiba University}{ May 2016 - Jun 2016}{ Chiba, Japan}
+ \cvevent{Research Internship}{ Chiba University}{ May 2016 - Jun 2016}{ Chiba, Japan}
 
 \begin{itemize}
 \item Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
-% \item Conducted nonlinear stability analysis to obtain significant parameters \& visualize their behaviour near stability points to understand contribution to pattern formation
 \end{itemize}
 
 \cvtag{Visualization}
@@ -143,11 +141,11 @@
 \switchcolumn
 
 \cvsection{Skills}
-\label{sec:orga515844}
+\label{sec:org81db914}
 \cvtag{Python}
 \cvtag{NumPy}
 \cvtag{Plotly}
-\cvtag{Statistics}
+\cvtag{Pytest}
 \cvtag{Scikit-learn}
 \cvtag{Pandas}
 \cvtag{Keras}
@@ -155,18 +153,18 @@
 \divider
 
 \cvtag{FastAPI}
-\cvtag{SQL}
 \cvtag{MongoDB}
-\cvtag{MLFlow}
+\cvtag{SQL}
+\cvtag{MLFLow}
 \divider
 
 \cvtag{Git/GitHub}
-\cvtag{Azure}
+\cvtag{AWS}
 \cvtag{Linux}
 \cvtag{Docker}
 
 \cvsection{Education}
-\label{sec:org3250eca}
+\label{sec:orge9a51b6}
 \cvevent{M.Tech\ in Mechanical Engineering}{ IIT-B}{ Jul 2017 - Nov 2018}{}
 \begin{itemize}
 \item Specialization in CADA
@@ -186,7 +184,7 @@
 % \newpage
 
 \cvsection{Extracurricular}
-\label{sec:org029ad46}
+\label{sec:org22bf48b}
 
 \begin{itemize}
 \item Mentored 100+ students to produce 20+ short films during Freshizza festival
@@ -195,7 +193,7 @@
 \end{itemize}
 
 \cvsection{Certification}
-\label{sec:orga9fa4ec}
+\label{sec:org77df3e7}
 
 \begin{itemize}
 \item Data Analysis with Pandas and Python
