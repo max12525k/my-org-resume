@@ -312,6 +312,10 @@
   \ifstrequal{#4}{}{}{{\small\makebox[0.5\linewidth][l]{\faMapMarker~#4}}}\par
   \medskip\normalsize
 }
+\newcommand{\cveventrole}[1]{%
+  {\large\color{emphasis}#1\par}
+  \smallskip\normalsize
+  }
 \newcommand{\cveventcomp}[5]{%
     {\large\color{emphasis}#1\par}
     \smallskip\normalsize

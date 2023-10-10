@@ -1,4 +1,4 @@
-% Created 2023-04-21 Fri 17:27
+% Created 2023-10-11 Wed 02:59
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 
@@ -69,137 +69,72 @@
 }
 \makecvheader
 
-\begin{paracol}{2}
-\cvsection{Professional Experience}
-\label{sec:org6ed8d3e}
-\cvevent{Senior Data Scientist}{ SecureThings.ai}{ Sep 2022 - Ongoing}{ Mumbai\ India}
-
-\cvdomain{Automative Cybersecurity}
-\begin{itemize}
-\item Utilize Deep learning techniques to extract cybersecurity labels, entities and relationships to create knowledge graph.
-
-\item Developed and maintain APIs on AWS cloud to facilitate security applications.
-
-\cvtag{NLP}
-\cvtag{NER}
-\cvtag{FastAPI}
-\cvtag{MongoDB}
-\cvtag{AWS}
-\end{itemize}
-\par\divider
-\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Feb 2022 - Sep 2022}{ Mumbai, India}
-\cvdomain{Telecommunication}
-\begin{itemize}
-\item Led a team of 6 in designing a federated ML architecture for 10+ fault and performance management usecase across 5000+ sites, in partnership with data engineer, domain expert and solution architect for swift response.
-\end{itemize}
-
-\begin{itemize}
-\item Headed client calls to ensure model transparency and explainability while gathering requirements for ML solutions
-\end{itemize}
-
-\cvtag{Federated ML}
-\cvtag{Client Engagement}
-\cvtag{DL}
-
-\par\divider
-\cvevent{Data Scientist}{ Tata Consultancy Services}{ Apr 2019 -- Nov 2021}{ Mumbai, India}
-\cvdomain{Telecommunication}
-\begin{itemize}
-\item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%
-\item Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss (IP filing in progress)
-\end{itemize}
-
-\cvtag{Text mining}
-\cvtag{Event Forecasting}
-\cvtag{Anomaly detection}
-\cvtag{TDD}
-
-\par\divider
-\cvdomain{Insurance}
-\begin{itemize}
-\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10\%
-\end{itemize}
-
-\cvtag{Timeseries Forecasting}
-\cvtag{Data Analysis}
-\cvtag{Reporting}
-\cvtag{ARIMA}
-
-\par\divider
- \cvevent{Research Internship}{ Chiba University}{ May 2016 - Jun 2016}{ Chiba, Japan}
-
-\begin{itemize}
-\item Explored linear diffusive coupled neurons (FHN coupled system) with heterogeneous external forcing to study pattern formation
-\end{itemize}
-
-\cvtag{Visualization}
-\cvtag{MATLAB}
-\cvtag{Linear algebra}
-
-\newpage
-
-\switchcolumn
-
+% \begin{paracol}{2}
 \cvsection{Skills}
-\label{sec:org81db914}
+\label{sec:org4fc6649}
 \cvtag{Python}
-\cvtag{NumPy}
 \cvtag{Plotly}
 \cvtag{Pytest}
 \cvtag{Scikit-learn}
 \cvtag{Pandas}
-\cvtag{Keras}
-
-\divider
-
+\cvtag{Tensorflow}
+\cvtag{PyTorch}
+\cvtag{Large Language Model}
+\cvtag{LangChain}
 \cvtag{FastAPI}
 \cvtag{MongoDB}
-\cvtag{SQL}
+\cvtag{VectorDB}
+\cvtag{MYSQL/PostgreSQL}
+\cvtag{Git}
+\cvtag{Pulumi}
 \cvtag{MLFLow}
-\divider
-
-\cvtag{Git/GitHub}
 \cvtag{AWS}
 \cvtag{Linux}
 \cvtag{Docker}
 
+\cvsection{Professional Experience}
+\label{sec:org4c903a9}
+\cvevent{Senior Data Scientist}{ SecureThings.ai}{ Sep 2022 - Ongoing}{ Mumbai\ India}
+
+\begin{itemize}
+\item Developed spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2000000+ semi-structured texts to generate knowledge graph with 70+ accuracy.
+\item Designed and developed LLM pipeline using langchain to improve labels and relationship extraction by 15\% and reducing the time taken by 90\%.
+\item Collaborated with stakeholders to design and implement data pipeline, machine learning pipeline and machine learning operation on aws cloud using IaC(Pulumi).
+\end{itemize}
+
+\cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Feb 2022 - Sep 2022}{ Mumbai, India}
+\begin{itemize}
+\item Led the development of web based ML exporlation tool for 40\% faster development of ML usecases for telecom.
+\item Developed ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15\% reduction in events and enable close loop automation for 25\% event.
+\item Collaberated with clients to reduce the delivery time of mutually agreed milestone by 5\%.
+\end{itemize}
+
+\cveventrole{Data Scientist}
+\begin{itemize}
+\item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%.
+\end{itemize}
+
+\begin{itemize}
+\item Improved predictive maintenance by one day-ahead forecasting of faults and reducing the operation cost by 18\%.(POC).
+\item Reduced number of tickets by 6\% via automating the identification of alarm’s cluster with root alarm (POC).
+\item Improved network performance by deploying anomaly detection algorithm on azure cloud for network loss and latency, detecting half an hour prior to performance degration (IP filing in process).
+\item Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10\%.
+\end{itemize}
+
+%\switchcolumn
+
 \cvsection{Education}
-\label{sec:orge9a51b6}
-\cvevent{M.Tech\ in Mechanical Engineering}{ IIT-B}{ Jul 2017 - Nov 2018}{}
+\label{sec:org0f4afcb}
+\cvevent{M.Tech+B.Tech\ in Mechanical Engineering}{ Indian Institue of Technology, Bombay}{ Jul 2013 - Nov 2018}{ Mumbai, India}
+
 \begin{itemize}
-\item Specialization in CADA
-\item Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time
-\item Proposed and implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
+\item Sucessfully designed process to predict failure time of machines on the network to minimize the operation down time.
+\item Proposed and implemented standard template using owl ontology to digitally store properties of machine component from different vendors.
+\item Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
+\item Researched on pattern formation and created meaningful visualization as an Intern in Non Linear Dynamics at Chiba University, Japan.
 \end{itemize}
-
-\divider
-\cvevent{B.Tech\ in Mechanical Engineering}{ IIT-B}{ Jul 2013 - Jun 2017}{}
-\begin{itemize}
-\item Sucessfully headed official video channel of IIT-BBC, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
-\item Data Analysis and Interpretation
-\item Statistical Machine Learning and Data Mining
-\end{itemize}
-
-
 % \newpage
 
-\cvsection{Extracurricular}
-\label{sec:org22bf48b}
-
-\begin{itemize}
-\item Mentored 100+ students to produce 20+ short films during Freshizza festival
-\item Core team member of ``Mechanical Freshie'', a video with more than 630,000 views
-\item Supported students with physics classes for IIT-JEE exam
-\end{itemize}
-
-\cvsection{Certification}
-\label{sec:org77df3e7}
-
-\begin{itemize}
-\item Data Analysis with Pandas and Python
-\item Python for Timeseries Data Analysis
-\end{itemize}
-
-\end{paracol}
+%\end{paracol}
 \end{document}
 \end{document}
