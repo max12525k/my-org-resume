@@ -142,12 +142,13 @@
 
 ** Professional Experience
 *** Senior Data Scientist securethings :ignore:
-{{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Ongoing, Mumbai\ India)}}}
+{{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Ongoing, Pune\, India)}}}
 
 # {{{cvdomain(Automative Cybersecurity)}}}
-- Developed spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2000000+ semi-structured texts to generate knowledge graph with 70+ accuracy.
-- Designed and developed LLM pipeline using langchain to improve labels and relationship extraction by 15% and reducing the time taken by 90%.
-- Collaborated with stakeholders to design and implement data pipeline, machine learning pipeline and machine learning operation on aws cloud using IaC(Pulumi).
+- Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy.
+- Designed and developed LLM pipeline using LangChain to improve labels and relationship extraction by 15% and reducing the time taken by 90%.
+- Collaborated with stakeholders to design and create data pipeline, ML pipeline and ML operation on AWS cloud using IaC, reducing the cloud management time by 70% and cloud cost by 50%.
+- Responsible for end-to-end development and execution of backend application, supporting a product featuring 15+ screens and over 50 API integrations.
 
 # {{{cvtag(NLP)}}}
 # {{{cvtag(NER)}}}
@@ -159,15 +160,15 @@
 
 *** Senior Data Scientist TCS :ignore:
 # {{{par-div}}}
-{{{cvevent(Senior Data Scientist, Tata Consultancy Services, Feb 2022 - Sep 2022, Mumbai\, India)}}}
+{{{cvevent(Senior Data Scientist, Tata Consultancy Services, Apr 2019 - Sep 2022, Mumbai\, India)}}}
 
 *** Project1 :ignore:
 # {{{cvdomain(Telecommunication)}}}
 # - Participated in client calls for requirements gathering to refine product roadmap.
 # - Collaborated with cross functional team, enabling solution delivery and model expainability.
-- Led the development of web based ML exporlation tool for 40% faster development of ML usecases for telecom.
-- Developed ML based solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event.
-- Collaberated with clients to reduce the delivery time of mutually agreed milestone by 5%.
+- Led the team of 5 developers for web based ML exploration tool for 40% faster development and deployment of ML usecases in telecom domain.
+- Designed ML solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event.
+- Collaborated with clients to reduce the delivery time of mutually agreed milestone by 5%.
 # - Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
 
 # {{{cvtag(Federated ML)}}}
@@ -186,9 +187,9 @@
 # - Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss (IP filing in progress)
 # - Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
 # - Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
-- Improved predictive maintenance by one day-ahead forecasting of faults and reducing the operation cost by 18%.(POC).
+- Improved predictive maintenance by one day-ahead forecasting of faults and reducing the operation cost by 18% (POC).
 - Reduced number of tickets by 6% via automating the identification of alarm’s cluster with root alarm (POC).
-- Improved network performance by deploying anomaly detection algorithm on azure cloud for network loss and latency, detecting half an hour prior to performance degration (IP filing in process).
+- Improved network performance by deploying anomaly detection algorithm on MS Azure cloud for network loss and latency, detecting half an hour prior to performance degration (Patent in process).
 - Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10%.
 # - Mentored two peers for integration of ML use cases across 4+ applications
 
@@ -323,12 +324,12 @@
 
 ** Education condensed :ignore:
 ** Education
-{{{cvevent(M.Tech+B.Tech\ in Mechanical Engineering, Indian Institue of Technology\, Bombay, Jul 2013 - Nov 2018, Mumbai\, India)}}}
+{{{cvevent(M.Tech+B.Tech\ in Mechanical Engineering, Indian Institute of Technology Bombay, Jul 2013 - Nov 2018, Mumbai\, India)}}}
 
-- Sucessfully designed process to predict failure time of machines on the network to minimize the operation down time.
+- Sucessfully designed process to predict failure time of machines on the network to minimize the operation downtime.
 - Proposed and implemented standard template using owl ontology to digitally store properties of machine component from different vendors.
-- Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views
-- Researched on pattern formation and created meaningful visualization as an Intern in Non Linear Dynamics at Chiba University, Japan.
+- Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
+- Researched on pattern formation and created meaningful visualization as an Intern in non-linear dynamics at Chiba University, Japan.
 ** Newpage :ignore:
 #+BEGIN_EXPORT latex
 % \newpage
