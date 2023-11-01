@@ -135,7 +135,7 @@
 {{{cvtag(MYSQL/PostgreSQL)}}}
 {{{cvtag(Git)}}}
 {{{cvtag(Pulumi)}}}
-{{{cvtag(MLFLow)}}}
+{{{cvtag(CI/CD)}}}
 {{{cvtag(AWS)}}}
 {{{cvtag(Linux)}}}
 {{{cvtag(Docker)}}}
@@ -147,7 +147,7 @@
 # {{{cvdomain(Automative Cybersecurity)}}}
 - Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy.
 - Designed and developed LLM pipeline using LangChain to improve labels and relationship extraction by 15% and reducing the time taken by 90%.
-- Collaborated with stakeholders to design and create data pipeline, ML pipeline and ML operation on AWS cloud using IaC, reducing the cloud management time by 70% and cloud cost by 50%.
+- Collaborated with stakeholders to design and create data pipeline, ML pipeline and ML operation on AWS cloud using IaC, reducing the cloud management time by 70%, cloud cost by 50% and product deployment time by 80%.
 - Responsible for end-to-end development and execution of backend application, supporting a product featuring 15+ screens and over 50 API integrations.
 
 # {{{cvtag(NLP)}}}
