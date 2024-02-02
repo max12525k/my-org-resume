@@ -105,7 +105,7 @@
 
 * CV Column 1 :ignore:
 #+begin_export latex
-% \begin{paracol}{2}
+\begin{paracol}{2}
 #+end_export
 ** Personal Statement  :ignore:noexport:
 #+begin_export latex
@@ -119,7 +119,7 @@
  ``I am an aspiring data scientist who loves exploring new things with data''
  \end{quote}
 #+end_export
-** Skills
+** Skills :ignore:noexport:
 {{{cvtag(Python)}}}
 {{{cvtag(Plotly)}}}
 {{{cvtag(Scikit-learn)}}}
@@ -141,8 +141,21 @@
 {{{cvtag(Docker)}}}
 
 ** Professional Experience
+
+*** SDE | Prompt Engineer :ignore:
+{{{cvevent(ML Engineer | Prompt Engineer, Meta Contractor | Unifytech, Nov 2023 - Ongoing, Mumbai, India)}}}
+
+- Researched and implemented prompt engineering technique on RAG system to improve models question answer ability.
+
+{{{cvtag(NLP)}}}
+{{{cvtag(RAG)}}}
+{{{cvtag(GenAI)}}}
+{{{cvtag(VectorDB)}}}
+{{{cvtag(LLM)}}}
+{{{cvtag(Prompt Tuning)}}}
 *** Senior Data Scientist securethings :ignore:
-{{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Ongoing, Pune\, India)}}}
+{{{par-div}}}
+{{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Sep 2023, Pune\, India)}}}
 
 # {{{cvdomain(Automative Cybersecurity)}}}
 - Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy.
@@ -150,16 +163,16 @@
 - Collaborated with stakeholders to design and create data pipeline, ML pipeline and ML operation on AWS cloud using IaC, reducing the cloud management time by 70%, cloud cost by 50% and product deployment time by 80%.
 - Responsible for end-to-end development and execution of backend application, supporting a product featuring 15+ screens and over 50 API integrations.
 
-# {{{cvtag(NLP)}}}
-# {{{cvtag(NER)}}}
-# {{{cvtag(FastAPI)}}}
-# {{{cvtag(MongoDB)}}}
-# {{{cvtag(Docker)}}}
-# {{{cvtag(IaC)}}}
-# {{{cvtag(LLM)}}}
+{{{cvtag(NLP)}}}
+{{{cvtag(NER)}}}
+{{{cvtag(FastAPI)}}}
+{{{cvtag(PyTorch)}}}
+{{{cvtag(Docker)}}}
+{{{cvtag(IaC)}}}
+{{{cvtag(LLM)}}}
 
 *** Senior Data Scientist TCS :ignore:
-# {{{par-div}}}
+{{{par-div}}}
 {{{cvevent(Senior Data Scientist, Tata Consultancy Services, Apr 2019 - Sep 2022, Mumbai\, India)}}}
 
 *** Project1 :ignore:
@@ -168,7 +181,7 @@
 # - Collaborated with cross functional team, enabling solution delivery and model expainability.
 - Led the team of 5 developers for web based ML exploration tool for 40% faster development and deployment of ML usecases in telecom domain.
 - Designed ML solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event.
-- Collaborated with clients to reduce the delivery time of mutually agreed milestone by 5%.
+# - Collaborated with clients to reduce the delivery time of mutually agreed milestone by 5%.
 # - Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
 
 # {{{cvtag(Federated ML)}}}
@@ -187,24 +200,24 @@
 # - Optimise network management by building usecases for predictive maintenance of network, reduced fault ticket generation and detection of network performance loss (IP filing in progress)
 # - Proposed, designed & built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60%
 # - Developed GUI application for end to end exploration of ML use cases by data scientist and domain expert alike
-- Improved predictive maintenance by one day-ahead forecasting of faults and reducing the operation cost by 18% (POC).
-- Reduced number of tickets by 6% via automating the identification of alarm’s cluster with root alarm (POC).
-- Improved network performance by deploying anomaly detection algorithm on MS Azure cloud for network loss and latency, detecting half an hour prior to performance degration (Patent in process).
-- Automated and optimised monthly forecasting of claims paid and premium collected, reducing average Mape by 10%.
+- Enabled one day ahead predictive maintenance, reduced ticket generation by 6% and optimised network performance using forecasting, clustering  and anomaly dectection techniques, reducing the operation cost by 18% (POC).
+# - Reduced number of tickets by 6% via automating the identification of alarm’s cluster with root alarm (POC).
+# - Improved network performance by deploying anomaly detection algorithm on MS Azure cloud for network loss and latency, detecting half an hour prior to performance degration (Patent in process).
+# - Improved decision making by automating and optimising monthly forecasting of claims paid and premium collected by reducing MAPE by 10%.
 # - Mentored two peers for integration of ML use cases across 4+ applications
 
-# {{{cvtag(Mlextend)}}}
-# {{{cvtag(Xgboost)}}}
-# {{{cvtag(Pyod)}}}
-# {{{cvtag(AZURE VM)}}}
-# {{{cvtag(Pytest)}}}
-# {{{cvtag(Mlflow)}}}
-# {{{cvtag(Statsmodels)}}}
-# {{{cvtag(Scikit-learn)}}}
-# {{{cvtag(SARIMAX)}}}
-# {{{cvtag(ETS)}}}
-# {{{cvtag(Plotly)}}}
-# {{{cvtag(NLP)}}}
+{{{cvtag(Mlextend)}}}
+{{{cvtag(Xgboost)}}}
+{{{cvtag(Pyod)}}}
+{{{cvtag(AZURE VM)}}}
+{{{cvtag(Pytest)}}}
+{{{cvtag(Mlflow)}}}
+{{{cvtag(Statsmodels)}}}
+{{{cvtag(Scikit-learn)}}}
+{{{cvtag(SARIMAX)}}}
+{{{cvtag(ETS)}}}
+{{{cvtag(Plotly)}}}
+{{{cvtag(NLP)}}}
 ***  Project 2 :ignore:noexport:
 # {{{par-div}}}
 # {{{cvdomain(Insurance)}}}
@@ -239,7 +252,7 @@
 # {{{cveventacad(Masters Thesis, Indian Institue of Technology\, Bomaby , Prof. M.S. Kulkarni, July 2017 - Nov 2018, Mumbai\, India)}}}
 - Sucessfully designed process to predict the failure time of new installed machine on the network to minimize the operation down time of network
 - Proposed and Implemented standard template to digitally store properties of machine component from different vendors, optimising the digital processing of components
-- Sucessfully modelled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
+- Sucessfully modeled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
 # {{{par-div}}}
 ** Position of Responsibility :noexport:
 {{{cvevent(Overall Coordinator, IIT-BBC, Apr 2015 - Mar 2016, Mumbai\, India)}}}
@@ -283,22 +296,26 @@
 * CV Column 2 :ignore:
 # Switch to the right column - will automatically move to the next page.
 #+begin_export latex
-%\switchcolumn
+\switchcolumn
 #+end_export
 
-** Skills :ignore:noexport:
+** Skills
 {{{cvtag(Python)}}}
-{{{cvtag(Plotly)}}}
-{{{cvtag(Pytest)}}}
+{{{cvtag(RAG)}}}
 {{{cvtag(Scikit-learn)}}}
-{{{cvtag(Pandas)}}}
+{{{cvtag(VectorDB)}}}
+{{{cvtag(GenAI)}}}
 {{{cvtag(Keras)}}}
 {{{cvtag(PyTorch)}}}
 {{{cvtag(LangChain)}}}
+{{{par-div}}}
+
 {{{cvtag(FastAPI)}}}
 {{{cvtag(MongoDB)}}}
 {{{cvtag(SQL)}}}
-{{{cvtag(MLFLow)}}}
+{{{cvtag(MLOPS)}}}
+{{{par-div}}}
+
 {{{cvtag(Git)}}}
 {{{cvtag(IaC)}}}
 {{{cvtag(AWS)}}}
@@ -306,24 +323,25 @@
 {{{cvtag(Docker)}}}
 
 
-** Education :ignore:noexport:
+** Education
 {{{cvevent(M.Tech\ in Mechanical Engineering, IIT-B, Jul 2017 - Nov 2018,)}}}
 # - Specialization in CADA
 - Sucessfully designed process to predict failure time of machines on the network to minimize the operation down time.
 - Proposed and implemented standard template using owl ontology to digitally store properties of machine component from different vendors.
+- Sucessfully modeled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
 
 # {{{divider}}}
 
 {{{cvevent(B.Tech\ in Mechanical Engineering, IIT-B, Jul 2013 - Jun 2017,)}}}
 - Attended courses related to statistics, data analysis and mechanical engineering.
-
+- Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
 # {{{divider}}}
 
 {{{cvevent(Internship\ in Non Linear Dynamics, Chiba University, May 2016 - Jun 2016,)}}}
 - Researched on pattern formation and created meaningful visualization.
 
 ** Education condensed :ignore:
-** Education
+** Education :ignore:noexport:
 {{{cvevent(M.Tech+B.Tech\ in Mechanical Engineering, Indian Institute of Technology Bombay, Jul 2013 - Nov 2018, Mumbai\, India)}}}
 
 - Sucessfully designed process to predict failure time of machines on the network to minimize the operation downtime.
@@ -356,9 +374,9 @@
 
 # #+end_export
 
-** Extracurricular :noexport:
+** Extracurricular
 
-- Sucessfully headed official video channel of IIT-BBC, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
+# - Sucessfully headed official video channel of IIT-BBC, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
 # - Mentored 100+ students to produce 20+ short films during Freshizza festival
 - Core team member of "Mechanical Freshie", a video with more than 630,000 views.
 - Supported students with physics classes for IIT-JEE exam.
@@ -366,7 +384,7 @@
 # - Customize emacs in free time for optimised development
 # {{{divider}}}
 
-** Certification :noexport:
+** Certification :ignore:noexport:
 
 - Data Analysis with Pandas and Python
 - Python for Timeseries Data Analysis
