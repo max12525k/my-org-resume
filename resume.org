@@ -143,9 +143,10 @@
 ** Professional Experience
 
 *** SDE | Prompt Engineer :ignore:
-{{{cvevent(ML Engineer | Prompt Engineer, Meta Contractor | Unifytech, Nov 2023 - Ongoing, Mumbai, India)}}}
+{{{cvevent(ML Engineer | Prompt Engineer, Meta Tech Consultant | Unifytech, Nov 2023 - Ongoing, Mumbai, India)}}}
 
 - Researched and implemented prompt engineering technique on RAG system to improve models question answer ability.
+- Design and implement large scale data generation pipeline along with automated validation to improve smart glasses performance by finetuning LLMs
 
 {{{cvtag(NLP)}}}
 {{{cvtag(RAG)}}}
@@ -153,14 +154,15 @@
 {{{cvtag(VectorDB)}}}
 {{{cvtag(LLM)}}}
 {{{cvtag(Prompt Tuning)}}}
+
 *** Senior Data Scientist securethings :ignore:
 {{{par-div}}}
 {{{cvevent(Senior Data Scientist, SecureThings.ai, Sep 2022 - Sep 2023, Pune\, India)}}}
 
 # {{{cvdomain(Automative Cybersecurity)}}}
-- Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy.
-- Designed and developed LLM pipeline using LangChain to improve labels and relationship extraction by 15% and reducing the time taken by 90%.
-- Collaborated with stakeholders to design and create data pipeline, ML pipeline and ML operation on AWS cloud using IaC, reducing the cloud management time by 70%, cloud cost by 50% and product deployment time by 80%.
+- Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy and further improve the performance using LLM pipeline with langchain.
+# - Designed and developed LLM pipeline using LangChain to improve labels and relationship extraction by 15% and reducing the time taken by 90%.
+- Collaborated with stakeholders to design and create product pipeline on AWS cloud using IaC, reducing the cloud management time by 70%, cloud cost by 50% and product deployment time by 80%.
 - Responsible for end-to-end development and execution of backend application, supporting a product featuring 15+ screens and over 50 API integrations.
 
 {{{cvtag(NLP)}}}
@@ -180,7 +182,7 @@
 # - Participated in client calls for requirements gathering to refine product roadmap.
 # - Collaborated with cross functional team, enabling solution delivery and model expainability.
 - Led the team of 5 developers for web based ML exploration tool for 40% faster development and deployment of ML usecases in telecom domain.
-- Designed ML solution for 10+ usecase from scratch for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event.
+- Designed ML solution for 10+ usecase for telecom fault and performance management leading to decrease in 15% reduction in events and enable close loop automation for 25% event.
 # - Collaborated with clients to reduce the delivery time of mutually agreed milestone by 5%.
 # - Collaberated with data engineer, domain expert and solution architect to design federated ML architecture to deploy ML solution across 5000+ sites to limit the response time in seconds
 
@@ -264,7 +266,7 @@
 # {{{cvtag()}}}
 
 
-** Newpage :ignore:
+** Newpage :ignore:noexport:
 # {{{new-page}}}
 
 ** A day of my life :noexport:
@@ -348,7 +350,7 @@
 - Proposed and implemented standard template using owl ontology to digitally store properties of machine component from different vendors.
 - Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
 - Researched on pattern formation and created meaningful visualization as an Intern in non-linear dynamics at Chiba University, Japan.
-** Newpage :ignore:
+** Newpage :ignore:noexport:
 #+BEGIN_EXPORT latex
 % \newpage
 #+END_EXPORT
@@ -411,6 +413,6 @@
 
 * Back Matter :ignore:
 #+begin_export latex
-%\end{paracol}
+\end{paracol}
 \end{document}
 #+end_export
