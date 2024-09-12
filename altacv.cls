@@ -149,6 +149,7 @@
 % \RequirePackage{marginfix}
 
 \setlength{\parindent}{0pt}
+
 \newcommand{\divider}{\textcolor{body!30}{\hdashrule{\linewidth}{0.6pt}{0.5ex}}\medskip}
 
 \newenvironment{fullwidth}{%
@@ -242,6 +243,9 @@
   {\faIndustry~#1}
 }
 
+\newcommand{\cvproject}[1]{
+  {\faCode~#1}
+}
 \newcommand{\altacv@add@photo@left}[1]{%
   \appto{\altacv@left@photos}{%
     \@makeaphoto{\altacv@photo@diam@left}{#1}\hspace{1ex}%
@@ -287,8 +291,7 @@
   \endgroup\medskip
 }
 
-\renewenvironment{quote}{\color{accent}\itshape\large}{\par}
-
+\renewenvironment{quote}{\color{body}\itshape\large}{\par}
 \newcommand{\cvsection}[2][]{%
   \bigskip%
   \ifstrequal{#1}{}{}{\marginpar{\vspace*{\dimexpr1pt-\baselineskip}\raggedright\input{#1}}}%

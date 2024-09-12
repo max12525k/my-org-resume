@@ -1,4 +1,4 @@
-% Created 2024-02-05 Mon 15:22
+% Created 2024-09-11 Wed 19:43
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 
@@ -30,7 +30,7 @@
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
 % Change the bullets for itemize and rating marker
-% for cvskill if you want to
+% for \cvskill if you want to
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
@@ -49,143 +49,195 @@
  pdftitle={},
  pdfkeywords={},
  pdfsubject={},
- pdfcreator={Emacs 29.1 (Org mode 9.7)}, 
+ pdfcreator={Emacs 29.1 (Org mode 9.8)}, 
  pdflang={English}}
 \begin{document}
 
 \name{Madhusudan Kumar}
 \photoR{2.8cm}{logo.png}
-\tagline{Senior Data Scientist}
+\tagline{Machine Learning Engineer}
 \personalinfo{
   %\homepage{None}
-  \email{kumarmadhusudhan689@gmail.com}
+  \email{max12525k@gmail.com}
   \phone{+91 9969072292}
   %\location{Mumbai, India}
   \github{max12525k}
-  \linkedin{max12525}
+  \linkedin{max12525k}
   %\dob{12 Jan 1995}
   %\driving{None}
 }
 \makecvheader
-\begin{paracol}{2}
-\cvsection{Professional Experience}
-\label{sec:org94e57f8}
-
-\cvevent{ML Engineer | Prompt Engineer}{ Meta Tech Consultant | Unifytech}{ Nov 2023 - Ongoing}{ Mumbai}
+%\begin{paracol}{2}
+ \begin{quote}
+ Machine Learning Engineer with 5.6 years of experience in applying machine learning, natural language understanding, Generative AI and software engineering to solving problems in smart customer interaction,   threat mapping, predictive maintenance and revenue forecasting. Major career highlights include:
 
 \begin{itemize}
-\item Researched and implemented prompt engineering technique on RAG system to improve models question answer ability.
-\item Design and implement large scale data generation pipeline along with automated validation to improve smart glasses performance by finetuning LLMs
+  \item Designed data generation service for rapid dataset delivery & model finetuning for given use case.
+  \item Advanced research on multimodal conversational agent by extending previous research.
+  \item Led cross functional team to deliver AI-powered application with 50+ backend APIs.
+  \item Developed Python Package to reduce model integration time by 60\%.
 \end{itemize}
+\end{quote}
+\cvsection{Skills}
+\label{sec:orge9bea09}
 
-\cvtag{NLP}
-\cvtag{RAG}
+\cvtag{Python}
+\cvtag{PyTorch}
+\cvtag{LangChain}
 \cvtag{GenAI}
+\cvtag{RAG}
+\cvtag{Transformers}
+\cvtag{HuggingFace}
+\cvtag{Pandas}
+\cvtag{Scikit-learn}
+\par\divider\par
+\cvtag{FastAPI}
 \cvtag{VectorDB}
-\cvtag{LLM}
-\cvtag{Prompt Tuning}
+\cvtag{MongoDB}
+\cvtag{MYSQL/PostgreSQL}
+\cvtag{Git}
+\cvtag{CI/CD}
+\cvtag{AWS}
+\cvtag{Linux}
+\cvtag{Docker}
 
-\par\divider
-\cvevent{Senior Data Scientist}{ SecureThings.ai}{ Sep 2022 - Sep 2023}{ Pune, India}
+\par
+\cvsection{Professional Experience}
+\label{sec:org39499d9}
 
+\cvevent{Machine Learning Engineer}{ Meta | Unifytech}{ Nov 2023 - Ongoing}{ Mumbai}
+
+\cvproject{Project Management}
 \begin{itemize}
-\item Implemented spacy pipeline to extract cybersecurity 50+ labels and 20+ relationships from 2 million plus semi-structured texts to generate knowledge graph with 70+ accuracy and further improve the performance using LLM pipeline with langchain.
+\item Managed 5+ member team of ML engineers and annotators, achieving 10\% acceleration in project milestone delivery.
+\end{itemize}
+\cvproject{AI for Smart Glasses}
+\begin{itemize}
+\item Spearheaded the design and development of scalable data generation service using LangChain, tailored to support diverse finetuning use case, leading to significant reduction in dataset (100K+ samples) delivery time.
+\item Designed and implemented robust evaluation framework, leveraging quantitative and qualitative metrics to assess large-scale data generation, resulting in enhanced dataset quality by 40\% while reducing annotation time by 60\%.
+\item Fine-tuned LLaMA 3 (8B) model on custom dataset, achieving 86\% performance improvement in answering user queries in structured format and deployed containerized model for seamless company-wide access on Meta Infra.
 \end{itemize}
 
+\cvproject{Research on Conversational Agents}
 \begin{itemize}
-\item Collaborated with stakeholders to design and create product pipeline on AWS cloud using IaC, reducing the cloud management time by 70\%, cloud cost by 50\% and product deployment time by 80\%.
-\item Responsible for end-to-end development and execution of backend application, supporting a product featuring 15+ screens and over 50 API integrations.
+\item Validated findings from research papers by conducting ablation study and identifying key gaps for investigation.
+\item Extended text-based agent architecture (COOPER) research to build multimodal conversational agents, showcasing performance gains in specialized domains from existing agents.
 \end{itemize}
 
+\cvproject{HRMS Chatbot}
+\begin{itemize}
+\item Developed a modular, distributed document processing pipeline with FastAPI, MongoDB and FAISS, streamlining embedding generation and storage for efficient scalability.
+\item Boosted HR Policy QA performance through strategic RAG implementation and optimized COT prompts.
+\end{itemize}
+
+
+\cvtag{LLAMA3}
+\cvtag{LangChain}
+\cvtag{Transformers}
+\cvtag{PEFT}
+\cvtag{Cosine Similarity}
+\cvtag{LLM Evaluation}
+\cvtag{Docker}
+\cvtag{FastAPI}
+\par
+
+\par\divider\par
+\cvevent{Senior Data Scientist}{ SecureThings.AI}{ Sep 2022 - Sep 2023}{ Mumbai, India}
+
+\cvproject{Knowledge Graph Generation with AI}
+
+\begin{itemize}
+\item Built knowledge graph generation pipeline leveraging SpaCy, extracting 50+ cybersecurity labels and 20+ relationships from 2M+ semi-structured texts with 70\%+ accuracy, reduced extraction time by using OpenAI and LangChain.
+\end{itemize}
+
+\cvproject{Product Development and deployment}
+\begin{itemize}
+\item Built and deployed distributed backend application using FastAPI, AWS Cognito, Docker and MongoDB, supporting a multi-screen product (15+) with extensive API integration (50+), ensuring seamless user experience.
+\item Deployed AWS pipeline using IaC, reducing management time by 70\%, costs by 50\%, and deployment time by 80\%.
+\end{itemize}
 \cvtag{NLP}
 \cvtag{NER}
-\cvtag{FastAPI}
 \cvtag{PyTorch}
+\cvtag{SpaCy}
+\cvtag{LangChain}
+\cvtag{FastAPI}
+\cvtag{MongoDB}
 \cvtag{Docker}
 \cvtag{IaC}
 \cvtag{LLM}
+\cvtag{OpenAI}
 
-\par\divider
+\par\divider\par
 \cvevent{Senior Data Scientist}{ Tata Consultancy Services}{ Apr 2019 - Sep 2022}{ Mumbai, India}
 
+\cvproject{AI Platform for Telecommunication}
 \begin{itemize}
-\item Led the team of 5 developers for web based ML exploration tool for 40\% faster development and deployment of ML usecases in telecom domain.
-\item Designed ML solution for 10+ usecase for telecom fault and performance management leading to decrease in 15\% reduction in events and enable close loop automation for 25\% event.
+\item Led the team of 5 developers for web-based ML exploration tool for 40\% faster deployment of ML solution.
+\item Designed 10+ ML solutions for telecom fault and performance management leading to decrease in 15\% reduction in events and enable close loop automation for 25\% events accross 5000+ sites.
 \end{itemize}
 
 \cveventrole{Data Scientist}
 
+\cvproject{AI Platform for Telecommunication}
 \begin{itemize}
-\item Proposed, designed \& built Python package for integration of 24+ ML use cases across 4+ applications, reducing integration time by 60\%.
+\item Proposed, designed \& built Python package for exploration \& integration of 24+ ML use cases across 4+ applications, reducing model training and integration time by 60\%.
 \end{itemize}
 
 \begin{itemize}
-\item Enabled one day ahead predictive maintenance, reduced ticket generation by 6\% and optimised network performance using forecasting, clustering  and anomaly dectection techniques, reducing the operation cost by 18\% (POC).
+\item Enabled one day ahead predictive maintenance, reduced ticket generation by 6\% and optimized network performance using forecasting, clustering  and anomaly detection techniques, reducing the operation cost by 18\% (POC).
 \end{itemize}
 
-\cvtag{Mlextend}
+\cvproject{ML for Revenue Forecasting in Insurance}
+\begin{itemize}
+\item Automated and optimized monthly forecasting of claims paid and premium collected, reducing average MAPE by 10\%
+\end{itemize}
+
 \cvtag{Xgboost}
-\cvtag{Pyod}
-\cvtag{AZURE VM}
-\cvtag{Pytest}
-\cvtag{Mlflow}
-\cvtag{Statsmodels}
 \cvtag{Scikit-learn}
 \cvtag{SARIMAX}
-\cvtag{ETS}
+\cvtag{Mlextend}
+\cvtag{Anomaly Detection}
 \cvtag{Plotly}
-\cvtag{NLP}
-\switchcolumn
-\cvsection{Skills}
-\label{sec:org8c595d3}
-\cvtag{Python}
-\cvtag{RAG}
-\cvtag{Scikit-learn}
-\cvtag{VectorDB}
-\cvtag{GenAI}
-\cvtag{Keras}
-\cvtag{PyTorch}
-\cvtag{LangChain}
-\par\divider
-
-\cvtag{FastAPI}
-\cvtag{MongoDB}
-\cvtag{SQL}
-\cvtag{MLOPS}
-\par\divider
-
-\cvtag{Git}
-\cvtag{IaC}
-\cvtag{AWS}
-\cvtag{Linux}
-\cvtag{Docker}
+\cvtag{Pyod}
+\cvtag{Pytest}
+\cvtag{AZURE VM}
+\par
+\cvsection{Patent}
+\label{sec:org0c57052}
+\cvsubsection{Patent}
+\begin{itemize}
+\item Awarded patent: ``METHOD AND SYSTEM FOR ANOMALY DETECTION OF NETWORK KPI'' Intellectual Property India Patent No.:202221056578
+\end{itemize}
+%\switchcolumn
 \cvsection{Education}
-\label{sec:org16a5d94}
+\label{sec:org23d19c0}
+
+\cveventacad{Internship}{ Chiba University}{ Prof. T. Sakurai}{ May 2016 - Jun 2016}{ Chiba, Japan}
+
+\begin{itemize}
+\item Explored linear diffusive coupled neurons (FHN coupled system) with external forcing to study pattern formation
+\item Conducted nonlinear stability analysis to obtain significant parameters \& visualize their behavior near stability points to understand contribution to pattern formation
+\end{itemize}
+
+\cvtag{Visualization}
+\cvtag{MATLAB}
+\cvtag{Linear algebra}
+\cvtag{Overseas Experience}
+\par\divider\par
+
 \cvevent{M.Tech\ in Mechanical Engineering}{ IIT-B}{ Jul 2017 - Nov 2018}{}
 
 \begin{itemize}
-\item Sucessfully designed process to predict failure time of machines on the network to minimize the operation down time.
-\item Proposed and implemented standard template using owl ontology to digitally store properties of machine component from different vendors.
-\item Sucessfully modeled estimation of reliability of mechanical components from loading condition to estimate the time of failure enabling predictive maintenance
+\item Proposed and implemented OWL-ontology based template to digitally store properties of machine component from different vendors, optimizing the digital processing of components infromation.
+\item Designed and built process to predict the failure time of new machine on the network based on other machine failure data by modelled estimation of reliability of mechanical components from loading condition and similarity of components, minimizing the operation downtime.
 \end{itemize}
 
 \cvevent{B.Tech\ in Mechanical Engineering}{ IIT-B}{ Jul 2013 - Jun 2017}{}
 \begin{itemize}
-\item Attended courses related to statistics, data analysis and mechanical engineering.
-\item Sucessfully headed official video channel, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
+\item Attended courses related to statistics, data analysis, computer programing and mechanical engineering.
+\item Conducted research in non-linear dynamics, brain entrainment using mathematical modeling and simulations.
+\item Headed official video channel of IIT-BBC, leading a team of 6 conveners, creating 60+ videos and covering 35+ events, with nearly 2 million views.
 \end{itemize}
-
-\cvevent{Internship\ in Non Linear Dynamics}{ Chiba University}{ May 2016 - Jun 2016}{}
-\begin{itemize}
-\item Researched on pattern formation and created meaningful visualization.
-\end{itemize}
-\cvsection{Extracurricular}
-\label{sec:orgf9f225a}
-
-\begin{itemize}
-\item Core team member of ``Mechanical Freshie'', a video with more than 630,000 views.
-\item Supported students with physics classes for IIT-JEE exam.
-\end{itemize}
-\end{paracol}
-\end{document}
+%\end{paracol}
+%\end{document}
 \end{document}
